@@ -1,3 +1,9 @@
+"use client";
+
+// 结果区卡片。和 4.4 一字未改。
+// 一挂载就自己淡入、把情感分数滚动归位（anime.js 的入场动画）。
+// 因为用了 useEffect / useRef / anime.js，要在浏览器里跑，所以顶上标了 "use client"。
+// （拼音、情感分数都是写死的假数据，真分析等模块 5 接后端。）
 import { useEffect, useRef } from "react";
 import { animate, scrambleText } from "animejs";
 
